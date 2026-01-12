@@ -123,7 +123,7 @@ function addCategory(categoryId, categoryName, services) {
         if (index >= 4) serviceItem.classList.add('hidden');
         
         const serviceLogo = document.createElement('img');
-        serviceLogo.src = service.logo || `https://logo.clearbit.com/${new URL(service.url).hostname}`;
+        serviceLogo.src = service.logo || `https://img.logo.dev/${new URL(service.url).hostname}?token=pk_D1NmVX7xRcGtGu5sPdaADg`;
         serviceLogo.alt = service.name;
         serviceLogo.className = 'service-logo';
         
@@ -203,7 +203,7 @@ function addService(categoryId, service) {
     if (existingServices >= 4) serviceItem.classList.add('hidden');
     
     const serviceLogo = document.createElement('img');
-    serviceLogo.src = service.logo || `https://logo.clearbit.com/${new URL(service.url).hostname}`;
+    serviceLogo.src = service.logo || `https://img.logo.dev/${new URL(service.url).hostname}?token=pk_D1NmVX7xRcGtGu5sPdaADg`;
     serviceLogo.alt = service.name;
     serviceLogo.className = 'service-logo';
     
